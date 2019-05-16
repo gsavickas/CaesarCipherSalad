@@ -1,16 +1,22 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CaesarCipherComponent } from './components/caesar-cipher/caesar-cipher.component';
+import { VignereCipherComponent } from './components/vignere-cipher/vignere-cipher.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CaesarCipherComponent,
+    VignereCipherComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
